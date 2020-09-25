@@ -11,11 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_09_25_174113) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "pgcrypto"
   enable_extension "plpgsql"
-  enable_extension "uuid-ossp"
 
   create_table "urls", force: :cascade do |t|
     t.string "original_url", null: false
